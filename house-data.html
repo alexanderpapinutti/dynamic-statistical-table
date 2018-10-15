@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="body">
+    <div class="logo_e-mail">
+        <div class="logo">
+            <img src="pie-chart.png" class="bar_graph">
+            <h1>TGIF</h1>
+
+        </div>
+        <div><img class="email_image" src="close-envelope.png"><a href="mailto:info@tgif.net"> info@tgif.net</a></div>
+    </div>
+    <nav class="top_side">
+
+        <div class="links">
+            <div class="home_link">
+                <a href="/home-starter-page.html">Home</a>
+            </div>
+            <div class="dropdown">
+                <span><a href="/home-starter-page.html">Congress 113</a></span>
+                <div class="dropdown_content">
+                    <a href="/senate-data.html">Senate</a>
+                    <a href="/house-data.html">House</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="party_filter"> Filter by party:
+            <input type="checkbox" id="republican" value="repub"> Republican
+            <input type="checkbox" id="democrat" value="democ"> Democrat
+            <input type="checkbox" id="independent" value="indep"> Independent
+        </div>
+        <div class="what_state">
+            Filter by state:
+            <select id="state-filter" class="filter">
+                <option id="option">No State selected</option>
+            </select>
+        </div>
+    </div>
+    <h1>House</h1>
+    <table class="table" id="senate-data"></table>
+    <div class="bottom_side">
+        <img src="copyright.png" class="copyright">2016 TGIF | All Rights Reserved
+    </div>
+    <script src="pro-congress-113-house.js"></script>
+    <script src="pre-load.js"></script>
+</body>
+</html>

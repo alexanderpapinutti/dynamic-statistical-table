@@ -1,0 +1,20 @@
+This is a non-trivial problem, and there are multiple ways to solve it, some simpler than others.    
+Think about the problem in general, which is
+Given a list of N numbers, with duplicates and a percentage K
+Example: 100 values, with duplicates, and you want to find the 10% of those values that are the smallest values in the set.
+Find the smallest value X such that there are M numbers less than or equal to X
+Example: The smallest value in the set is 84.2%, and that value occurs 3 times.
+M / N is greater than or equal to K
+Example: 3/100 is not greater than or equal to 10% so repeat for the next smallest value:
+The next smallest value is 84.5%, and that value occurs 2 times.
+Now you have the 5 smallest values.
+5/100 is still not greater than or equal to 10% so choose the next smallest value and repeat again.
+Stop when your set of smallest values represents 10% or more of the total.
+
+
+
+given a list of N numbers = list of percentages,
+
+sort list
+
+show 10% of list of percentages
