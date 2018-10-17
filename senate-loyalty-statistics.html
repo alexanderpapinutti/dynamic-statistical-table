@@ -1,178 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="body">
+    <div class="logo_e-mail">
+        <div class="logo">
+            <img src="pie-chart.png" class="bar_graph">
+            <h1>TGIF</h1>
+
+        </div>
+        <div><img class="email_image" src="close-envelope.png"><a href="mailto:info@tgif.net"> info@tgif.net</a></div>
+    </div>
+    <nav class="top_side">
+
+        <div class="links">
+            <div class="home_link">
+                <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\home-starter-page.html">Home |</a>
+            </div>
+            <div class="dropdown">
+                <span><a href="/home-starter-page.html">Congress 113 </a></span>
+                <div class="dropdown_content">
+                    <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\senate-data.html">Senate</a>
+                    <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\house-data.html">House</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span><a href="#">Attendance</a></span>
+                <div class="dropdown_content">
+                    <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\senate-attendance-statistics.html">Senate</a>
+                    <a href="/house-data.html">House</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span><a href="#">Party Loyalty</a></span>
+                <div class="dropdown_content">
+                    <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\senate-loyalty-statistics.html">Senate</a>
+                    <a href="/house-data.html">House</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
     
-    <body>
-         <nav>
-          <div>
-            <div>
-              <a href="#">TGIF</a>
-            </div>
-            <ul >
-              <li><a href="#">Home</a></li>
-              <li >
-                <a href="#">Congress 113</a>
-                <ul >
-                  <li><a href="#">Senate</a></li>
-                  <li><a href="#">House</a></li>
-                </ul>
-              </li>  
-              <li>
-                <a href="#">Attendance</a></li>
-                <ul>
-                    <li><a href="#">Senate</a></li>
-                    <li><a href="#">House</a></li>
-                </ul>
-              </li>  
-              <li>
-                <a href="#">Party Loyalty</a>
-                <ul>
-                    <li><a href="#">Senate</a></li>
-                    <li><a href="#">House</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>        
   
-
-        <header>            
-            <div>
+    <!--Table container-->
+    <div class="tables">
+        <div class="top_table_side">
+            <div class="party_loyalty_txt">
+                <h2>Party Loyalty</h2>
+                <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
             </div>
-        </header>
-        <!--Table container-->
-        <div>
-            <h2>Party Loyalty</h2>
-            <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
-    	    
-            <h2>Senate at a glance</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Party</th>
-                        <th>Number of Reps</th>
-                        <th>% Voted with Prty</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Republican</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>Democrat</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>Independent</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                </tbody>
-            </table>
-
+            <div class="glance">
+                <h2>Senate at a glance</h2>
+                <table id="senate-glance-table" class="table">
+                </table>
+            </div>
+        </div>
+        <div class="least_table">
             <h2>Least Loyal (Bottom 10% of Party)</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Number Party Votes</th>
-                        <th>% Party Votes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                </tbody>
+            <table id="senate-least-loyal-table" class="table">
             </table>
-
+        </div>
+        <div class="most_table">
             <h2>Most Loyal (Top 10% of Party)</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Number Party Votes</th>
-                        <th>% Party Votes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>--</td>
-                        <td>--</td>
-                        <td>--</td>
-                    </tr>
-                </tbody>
+            <table id="senate-most-loyal-table" class="table">
             </table>
-
-    	</div>
+        </div>
+    </div>
+    <div class="bottom_side">
+            <img src ="copyright.png" class= "copyright">2016 TGIF | All Rights Reserved
+    </div>
     <script src="pro-congress-113-senate.js"></script>
     <script src="statistics.js"></script>
+    <script src="table-maker.js"></script>
 </body>
 </html>

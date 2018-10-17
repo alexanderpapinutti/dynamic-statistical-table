@@ -8,6 +8,13 @@
     display: flex;
     width:100%;
 }
+
+.party_loyalty_txt {
+    width:50%;
+   padding-left: 5%;
+    padding-right: 3%;
+}
+
 .dropdown_content {
     display: none;
     flex-direction: column;
@@ -17,6 +24,18 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
+}
+.glance {
+    width: 50%;
+}
+
+.least_table {
+    width:50%;
+    padding-left: 5%;
+}
+.most_table {
+    width:50%;
+    
 }
 
 .body {
@@ -30,9 +49,22 @@
     display: flex;
 }
 
+.top_table_side {
+    border-bottom: solid thin grey;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .container {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.tables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .links {
@@ -72,11 +104,15 @@
     
 }
 
+.dropdown_content {
+    width:20%;
+}
+
 .home_link {
     width:150px;
     font-size: 30px;
     padding-left: 40px;
-    
+    color:black;
 }
 
 
