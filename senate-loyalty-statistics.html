@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
 <body class="body">
     <div class="logo_e-mail">
@@ -20,31 +21,27 @@
     </div>
     <nav class="top_side">
 
-        <div class="links">
-            <div class="home_link">
-                <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\home-starter-page.html">Home |</a>
-            </div>
-            <div class="dropdown">
-                <span><a href="/home-starter-page.html">Congress 113 </a></span>
-                <div class="dropdown_content">
-                    <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\senate-data.html">Senate</a>
-                    <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\house-data.html">House</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <span><a href="#">Attendance</a></span>
-                <div class="dropdown_content">
-                    <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\senate-attendance-statistics.html">Senate</a>
-                    <a href="/house-data.html">House</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <span><a href="#">Party Loyalty</a></span>
-                <div class="dropdown_content">
-                    <a href="file://C:\Users\Alex\Desktop\Task 3 Javascript\senate-loyalty-statistics.html">Senate</a>
-                    <a href="/house-data.html">House</a>
-                </div>
-            </div>
+        <button type="button" class="btn "><a href="/home-starter-page.html">Home |</a></button>
+        <div>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Congress 113</button>
+            <ul class="dropdown-menu">
+                <li><a href="/house-data.html">House Data</a></li>
+                <li><a href="/senate-data.html">Senate Data</a></li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Attendance</button>
+            <ul class="dropdown-menu">
+                <li><a href="/house-attendance-statistics.html">House Attendance</a></li>
+                <li><a href="/senate-attendance-statistics.html">Senate Attendance</a></li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Loyalty</button>
+            <ul class="dropdown-menu">
+                <li><a href="/house-loyalty-statistics.html">House Loyalty</a></li>
+                <li><a href="/senate-loyalty-statistics.html">Senate Loyalty</a></li>
+            </ul>
         </div>
 
     </nav>
@@ -79,6 +76,7 @@
     </div>
     <script src="pro-congress-113-senate.js"></script>
     <script src="statistics.js"></script>
-    <script src="table-maker.js"></script>
+    <script src="glance-table-maker.js"></script>
+    <script src="table-maker-loyalty.js"></script>
 </body>
 </html>

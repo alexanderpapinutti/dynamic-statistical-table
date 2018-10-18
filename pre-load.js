@@ -15,7 +15,7 @@ function myFunction(members) {
     var header_column_state = document.createElement("th");
     var header_column_seniority = document.createElement("th");
     var header_column_votes = document.createElement("th")
-    var name_header = document.createTextNode("Senator ");
+    var name_header = document.createTextNode("Name ");
     var party_header = document.createTextNode("Party ");
     var state_header = document.createTextNode("State ");
     var seniority_header = document.createTextNode("Seniority ");

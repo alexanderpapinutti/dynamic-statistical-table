@@ -1,8 +1,4 @@
-.dropdown {
 
-    width:200px;
-    font-size: 30px;
-}
 
 .checkboxes {
     display: flex;
@@ -15,16 +11,8 @@
     padding-right: 3%;
 }
 
-.dropdown_content {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background-color: darkgrey;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
+
+
 .glance {
     width: 50%;
 }
@@ -45,9 +33,6 @@
     background-color:lightyellow;
 }
 
-.dropdown:hover .dropdown_content {
-    display: flex;
-}
 
 .top_table_side {
     border-bottom: solid thin grey;
@@ -104,8 +89,11 @@
     
 }
 
-.dropdown_content {
-    width:20%;
+
+
+.party_attendance_txt {
+    padding-left: 2%;
+    width: 40%;
 }
 
 .home_link {
@@ -125,9 +113,69 @@
     height:20px;
 }
 
+.dropbtn {
+    background-color: lightblue;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover, .btn:focus{
+     background-color: #2980B9
+}
+
+.btn a{
+    color:black;
+}
+
+.btn {
+    background-color: lightblue;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
 .top_side {
+    display: flex;
+    align-items: center;
     background-color: lightblue;
     width: 90%;
+    height:90px;
     border:solid;
 }
 
