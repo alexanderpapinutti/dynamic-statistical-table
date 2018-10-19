@@ -60,7 +60,7 @@ function glanceTableMaker(object) {
     var td_independent_reps= document.createElement("td");
     var txt_td_independent_reps= document.createTextNode(independents_reps);
     var votes_independent;
-    console.log(object.avgVotesIndependents);
+    
     if (object.avgVotesIndependents === "NaN%"){
         votes_independent=0;
     }else{
